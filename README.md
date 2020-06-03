@@ -1,19 +1,10 @@
 # wymusic
+个人仿照网易音乐pc端项目
+技术栈：vue-cli@4,element-ui
 
-## Project setup
-```
+####使用
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+npm run dev
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
