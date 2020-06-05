@@ -6,7 +6,6 @@
                 <div class="downloadpng" >
                     <img src="@/assets/img/download.png" alt="" >
                 </div>
-                
             </div>
         </div>
         <div class="discovery-hot">
@@ -37,6 +36,9 @@
                             </span>
                         </div>
                     </div>
+                    <Imgcard />
+                    <Newsongs></Newsongs>
+                    <Songstop></Songstop>
                 </div>
                 <div class="hot-ri"></div>
             </div>
@@ -44,11 +46,20 @@
     </div>
 </template>
 <script>
+// 依次注入组件
 import Banner from './banner.vue'
+import Newsongs from './newsongs.vue'
+import Songstop from './songstop.vue'
+// 推荐歌曲-图片
+import Imgcard from './Imgcard.vue'
+
 export default {
     name:'discovery',
     components:{
-        Banner
+        Banner,
+        Imgcard,
+        Newsongs,
+        Songstop
     },
     data(){
         return{
@@ -75,9 +86,6 @@ export default {
             // flex-wrap: nowrap;
             position: relative;
             width:982px;
-           
-            
-            
             .downloadpng{
                 overflow: hidden;
                 float:right;
@@ -105,7 +113,7 @@ export default {
             background-color: #fff;
             .hot-le{
                 width:729px;
-                height:600px;
+                height:1300px;
                 border-right: 1px solid #ccc;
                 padding:20px 20px 40px;
                 .hot-nav{

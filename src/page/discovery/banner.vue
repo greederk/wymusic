@@ -13,7 +13,7 @@ export default {
     async created(){
         const { banners }  = await getBanner()
         this.banners = banners
-        console.log(this.banners)
+       
     },
     data(){
         return{
@@ -23,9 +23,7 @@ export default {
 }
 </script>
 <style lang="scss" >
-   .banner-img{
-    //    width:
-   } 
+ 
  .el-carousel__arrow{
      color:red;
  }
