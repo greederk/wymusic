@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // Discovery
+const Discovery = () => import('@/page/discovery/index.vue')
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('@/layout/index.vue')
+    name: 'discovery',
+    component: Discovery
   },
   
 ]

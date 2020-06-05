@@ -37,15 +37,15 @@
                  </div>
              </div>
          </div>
-        <Banner></Banner>
+      
    </div>
 </template>
 <script>
-import Banner from '@/page/discovery/banner.vue';
+
 
 export default {
     components:{
-        Banner
+       
     },
     data(){
         return{
