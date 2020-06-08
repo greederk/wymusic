@@ -40,7 +40,9 @@
                     <Newsongs></Newsongs>
                     <Songstop></Songstop>
                 </div>
-                <div class="hot-ri"></div>
+                <div class="hot-ri">
+                    <Singer></Singer>
+                </div>
             </div>
         </div>
     </div>
@@ -50,6 +52,7 @@
 import Banner from './banner.vue'
 import Newsongs from './newsongs.vue'
 import Songstop from './songstop.vue'
+import Singer from './singer.vue'
 // 推荐歌曲-图片
 import Imgcard from './Imgcard.vue'
 
@@ -59,7 +62,8 @@ export default {
         Banner,
         Imgcard,
         Newsongs,
-        Songstop
+        Songstop,
+        Singer
     },
     data(){
         return{
@@ -111,8 +115,9 @@ export default {
         .hot-con{
             width:982px;
             background-color: #fff;
+            display:flex;
             .hot-le{
-                width:729px;
+                width:690px;
                 height:1300px;
                 border-right: 1px solid #ccc;
                 padding:20px 20px 40px;

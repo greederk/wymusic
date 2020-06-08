@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <el-carousel :interval="3000" height="283.88px" arrow="always">
+    <div >
+        <el-carousel :interval="3000" height="283.88px" width="730px" arrow="always">
             <el-carousel-item v-for="banner in banners" :key='banner.scm'>
                <img :src="$utils.genImgUrl(banner.imageUrl, 730, 284)" class="banner-img">
             </el-carousel-item>
